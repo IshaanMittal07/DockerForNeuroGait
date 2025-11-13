@@ -1,7 +1,7 @@
 import { headers } from 'next/headers';
 import { NextResponse } from 'next/server';
 import { Webhook } from 'svix';
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '../../../../supabase-mock';
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
